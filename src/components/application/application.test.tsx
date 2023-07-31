@@ -52,6 +52,6 @@ describe("Application", () => {
 
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
-    expect(submitButtonElement).not.toBevksvEnabled();
+    expect(submitButtonElement).toBeDisabled();
   });
 });
