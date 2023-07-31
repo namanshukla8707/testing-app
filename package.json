@@ -51,9 +51,14 @@
   },
   "devDependencies": {
     "eslint-plugin-jest-dom": "^5.0.1",
+    "husky": "^8.0.0",
     "jest-cli": "^29.6.2",
+    "lint-staged": "^13.2.3",
     "msw": "^1.2.3",
-    "yarn": "^1.22.19",
-    "husky": "^8.0.0"
+    "yarn": "^1.22.19"
+  },
+  "lint-staged":{
+    "*.{ts,tsx}":["eslint"],
+    "*.{ts,tsx,css,scss}":["prettier --write"]
   }
 }
