@@ -1,13 +1,7 @@
+import { GreetProps } from "./greet.types";
 
-import React from 'react'
-type GreatProps = {
-  name?: String,
+const Greet = (props: GreetProps) => {
+  return <div>Hello {props.name ? props.name : "Guest"}</div>;
+};
 
-}
-const Greet = (props:GreatProps) => {
-  return (
-    <div>Hello {props.name}</div>
-  )
-}
-
-export default Greet
+export default Greet;
